@@ -1,0 +1,16 @@
+[package]
+name = "openaec-cloud"
+version = "0.1.0"
+edition = "2021"
+description = "Shared Nextcloud cloud storage library for OpenAEC tools — hybrid I/O (volume mount reads + WebDAV writes), multi-tenant"
+license = "MIT"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+quick-xml = "0.37"
+tokio = { version = "1", features = ["fs"] }
+urlencoding = "2"
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }
